@@ -5,9 +5,6 @@ Design and implement a Deep Convolutional Generative Adversarial Network (DCGAN)
 
 ## 1. Architecture & Model Design
 
-**Problem Solved:**  
-Traditional GANs suffer from training instability, mode collapse, and poor image quality for complex datasets like anime faces.
-
 **Approach:**
 - **Generator**: Deep transposed convolution network (8×8 → 64×64) with batch normalization and ReLU activations
 - **Discriminator**: Convolutional classifier with LeakyReLU, dropout, and sigmoid output for binary classification
@@ -20,9 +17,6 @@ Traditional GANs suffer from training instability, mode collapse, and poor image
 - One-sided label smoothing to prevent discriminator overfitting
 
 ## 2. Data Pipeline & Preprocessing
-
-**Problem Solved:**  
-Large anime face datasets require efficient loading, normalization, and batching for GPU training.
 
 **Approach:**
 - **Kaggle Integration**: Automated dataset download using Kaggle API credentials
@@ -82,15 +76,10 @@ GAN training requires careful monitoring, checkpointing, and visualization to tr
 
 ## 6. Technical Achievements
 
-**Deep Learning Expertise:** Advanced GAN architecture with custom training loops
-**Data Engineering:** Optimized TensorFlow data pipelines with preprocessing
+**Deep Learning:** Advanced GAN architecture with custom training loops
 **Model Optimization:** Stable adversarial training with proper normalization and regularization
 **Production Features:** Checkpointing, monitoring, and automated resume functionality
 **Visualization:** Real-time training progress with generated sample grids
-
-## Outcome
-
-A production-ready DCGAN system for generating high-quality anime faces, demonstrating expertise in generative modeling, adversarial training, data pipeline optimization, and deep learning infrastructure — suitable for creative AI applications and synthetic data generation.
 
 ---
 
