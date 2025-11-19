@@ -2,7 +2,7 @@
 
 ![Training Animation](voronoi_training_animation.gif)
 
-**Objective** Design and implement a Wasserstein Generative Adversarial Network with Gradient Penalty (WGAN-GP) to synthesize high-fidelity Voronoi material microstructures. [cite_start]This project leverages advanced optimization techniques—including Mixed Precision training and Two-Time-Scale Update Rules—to address "mode collapse" and generate scientifically accurate grain boundaries for computational material science[cite: 69, 70, 137].
+**Objective** Design and implement a Wasserstein Generative Adversarial Network with Gradient Penalty (WGAN-GP) to synthesize high-fidelity Voronoi material microstructures. This project leverages advanced optimization techniques—including Mixed Precision training and Two-Time-Scale Update Rules—to address "mode collapse" and generate scientifically accurate grain boundaries for computational material science.
 
 ## 1. Architecture & Model Design
 
@@ -26,7 +26,7 @@
 
 **Key Achievements:**
 * Seamless handling of high-dimensional microstructure datasets.
-* [cite_start]Optimized memory usage allowing for larger batch sizes (64) on consumer GPUs[cite: 126].
+* Optimized memory usage allowing for larger batch sizes (64) on consumer GPUs.
 * Robust preprocessing ensuring numerical stability during high-variance GAN training.
 
 ## 3. Training Infrastructure & Monitoring
@@ -51,8 +51,8 @@
 **Deep Learning Stack:**
 * [cite_start]**TensorFlow 2.x / Keras:** Core framework for graph construction [cite: 107-109].
 * [cite_start]**Mixed Precision (AMP):** Enabled `mixed_float16` policy to reduce VRAM usage by ~50% and accelerate training throughput on NVIDIA GPUs [cite: 121-122].
-* [cite_start]**NumPy & h5py:** High-performance numerical computation and data handling[cite: 110, 112].
-* [cite_start]**ImageIO:** For generating training progression animations[cite: 114].
+* **NumPy & h5py:** High-performance numerical computation and data handling.
+* **ImageIO:** For generating training progression animations.
 
 **Advanced Features:**
 * [cite_start]**Gradient Penalty:** Manually computed gradients of the Critic with respect to interpolated images to enforce Lipschitz continuity [cite: 268-279].
@@ -107,15 +107,10 @@
 **Generated Output:**
 * [cite_start]**Checkpoints:** Saved locally in `./checkpoints`[cite: 245].
 * [cite_start]**Visuals:** Progress frames saved to `./gif_frames`[cite: 143].
-* [cite_start]**Animation:** Final training evolution saved as `voronoi_training_animation.gif`[cite: 350].
+* **Animation:** Final training evolution saved as `voronoi_training_animation.gif`.
 * **Metrics:** Loss curves for Generator and Critic.
 
 **Customization:**
 * [cite_start]Adjust `epochs` or `batch_size` in the `config` dictionary [cite: 125-126].
 * [cite_start]Modify `gp_weight` (Gradient Penalty weight) to tune training stability[cite: 140].
 * [cite_start]Change `z_noise_dim` to alter the latent space complexity[cite: 133].
-
-
-
-2.  **Link in README:**
-    * Use the format: `![Training Animation](voronoi_training_animation.gif)` at the top of your README file.
