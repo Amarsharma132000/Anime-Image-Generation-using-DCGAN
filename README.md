@@ -38,10 +38,6 @@ Design and implement a WGAN-GP to synthesize sharp, diverse Voronoi tessellation
 - Optimized memory usage allowing for larger batch sizes (64) on consumer GPUs.
 - Robust preprocessing ensuring numerical stability during high-variance GAN training.
 
-**Sample Dataset Visualization**:
-![Dataset Samples](sample_dataset_grid.png)  
-*(9 random 64×64 Voronoi images from the loaded dataset.)*
-
 ## 3.Training Infrastructure & Monitoring
 
 ### Problem Solved
@@ -100,7 +96,7 @@ Python 3.8+
 ![Loss Curves](image.png)  
 *(Critic loss (blue) stabilizes; Generator (orange) minimizes steadily.)*
 
-## 6. 🚀 Technical Achievements
+## 6.Technical Achievements
 - **Generative AI**: Implementation of WGAN-GP, one of the most stable GAN architectures.
 - **Model Optimization**: Usage of Mixed Precision (AMP) and Learning Rate Schedulers.
 - **Production Features**: Checkpointing, automated GIF generation, and modular code structure.
