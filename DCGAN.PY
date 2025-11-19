@@ -4,7 +4,7 @@ CELL 1 ( # FOR DATA LOADING):
 import h5py
 import os
 import numpy as np
- 
+
 unzipped_dir = '/content/unzipped_data/Voronoi_micro_imgs'
 file_list = [os.path.join(unzipped_dir, f) for f in os.listdir(unzipped_dir) if f.endswith('.h5')]
  
